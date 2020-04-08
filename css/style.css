@@ -1,0 +1,38 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Reenie Beanie', cursive;
+    font-family: 'Comic Neue', cursive;
+}
+.intro{
+    display:flex; /*side by side h1*/
+    color: white;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,.5)),url('../img/sun.jpg');
+    background-size: cover;
+}
+.typing{
+    /* position: absolute; ancestors Hello I love */
+    position: relative; /*relative to its position where it should be*/
+    margin-left:10px;
+}
+/*after typing content add space + |   */
+.typing::after{ 
+    content: "";    /*only border| */   
+    position: absolute; /*ancestors*/ /*relative will also work*/
+    right: -5px; /*space*/
+    width: 1px;
+    height: 5%;
+    border-right: 2px solid white;
+    animation: blink 0.5s infinite ease;
+}
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
