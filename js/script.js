@@ -1,4 +1,4 @@
-const texts = ['sunsets','nature','dark chocolate','sleeping:('];
+const texts = ['sunsets','nature','travelling','sleeping:('];
 let count=0;
 let index=0;
 let currentText='';
